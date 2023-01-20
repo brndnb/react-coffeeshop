@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+
+
+.header-container {
+  background-color: bisque;
+  text-align: left;
+}
+
+.Main-container {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Main-box {
+  border: solid 1px grey;
+  width: 400px;
+  height: 400px;
+  
+}
