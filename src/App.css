@@ -1,28 +1,70 @@
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 
 
 .header-container {
+  padding:20px 10px 20px 10px;
   background-color: bisque;
   text-align: left;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.nav-flex {
+  border: solid 1px solid;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  background-color: bisque;
+  padding: 10px 40px;
+  border-radius: 30px;
 }
 
 .Main-container {
-  text-align: left;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
 }
 
 .Main-box {
-  border: solid 1px grey;
-
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  background-color: antiquewhite;
+  height: 700px;
+  width: 700px;
+  margin: 20px;
+  padding: 20px;  
 }
 
+
 .profile-image {
-  width: 300px;
-  height: 300px;
+
+  height: 400px;
+  width: 400px;
+  border-radius: 30px;
 }

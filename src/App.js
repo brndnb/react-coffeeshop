@@ -1,7 +1,7 @@
 import './App.css';
 import Footer from './Footer';
 import Header from './Header';
-import Main from './Main';
+import Hot from './Hot';
 import Nav from './Nav';
 
 
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
-      <Main />
+      <Hot />
       <Footer />
       <p>Hello World</p>
     </div>
