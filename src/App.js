@@ -1,8 +1,9 @@
 import './App.css';
-import Footer from './Footer';
-import Header from './Header';
-import Hot from './Hot';
-import Nav from './Nav';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Homepage from './pages/Homepage/Homepage';
+import HotRecipe from './pages/HotRecipe/HotRecipe';
+import ColdRecipe from './pages/ColdRecipe/ColdRecipe';
 
 
 
@@ -11,13 +12,14 @@ import Nav from './Nav';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Header />
-      <Nav />
-      <Hot />
-      <Footer />
-      <p>Hello World</p>
-    </div>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/hot" element={<HotRecipe />} />
+        <Route path ="/cold" element={<ColdRecipe />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
